@@ -1,0 +1,124 @@
+:root {
+    --amarelo: #f3c61f;
+}
+
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    height: 118px;
+    background-color: var(--amarelo);
+    color: #000;
+}
+
+header img{
+    margin: 27px 0 0 58px;
+    font-size: 2rem;
+}
+
+
+main {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+main #informacao{
+    background-color: #514988;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+main #informacao h1{
+    margin: 5%;
+    color: var(--amarelo);
+    font-size: 4.375rem;
+}
+
+main #informacao h2{
+    font-size: 1.875;
+}
+
+main #informacao p{
+    font-size: 1.53rem;
+    margin: 5%;
+}
+
+main div{
+    width: 99%;
+
+}
+
+main video{
+    align-items: center
+}
+
+.timerMargem{
+    color:#514988;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 3%;
+}
+
+#txtVideo{
+    color: #E33881;
+    font-family: 4.375rem;
+    margin: 2%;
+    font-weight: bold;
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+}
+
+#timer{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+footer {
+    display: flex;
+}
+
+.cardSize{
+    width: 204px
+}
+
+footer h2 {
+    font-size: 1.3rem;
+    color: var(--amarelo);
+    margin: 3% 0 0 3%;
+}
+
+footer #cards {
+    width: 50%;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+footer #botao {
+    border:0;
+    width: 50%;
+    align-items: center;
+}
+
+button {
+    width: 40%;
+    height: 20%;
+    margin: 15% 0 0 15%;
+    border-radius: 10px;
+    border: 0;
+    font-size: 2.625;
+    color: #fff;
+    background-color: #514988;
+    font-weight: bold;
+}
+
+button:hover {
+    
+    cursor: pointer;
+    color: var(--amarelo);
+}
