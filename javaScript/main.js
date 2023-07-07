@@ -4,4 +4,4 @@ function addReadBorder(id){
 }
 
 /*Aqui está chamando altomaticamente a função ao carregar a pagina*/
-addReadBorder('quinta')
+addReadBorder('domingo')
