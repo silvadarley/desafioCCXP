@@ -1,5 +1,6 @@
 :root {
     --amarelo: #f3c61f;
+    --purple: #514988;
 }
 
 * {
@@ -25,48 +26,43 @@ main {
 }
 
 main #informacao{
-    background-color: #514988;
+    background-color: var(--purple);
     color: #fff;
     text-align: center;
-    width: 100%;
+    width: 50vw;
 }
 
 main #informacao h1{
     margin: 5%;
     color: var(--amarelo);
-    font-size: 4.375rem;
+    font-size: 4em;
 }
 
 main #informacao h2{
-    font-size: 1.875;
+    font-size: 1.53em;
 }
 
 main #informacao p{
-    font-size: 1.53rem;
-    margin: 5%;
-}
-
-main div{
-    width: 99%;
-
+    font-size: 1.3em;
+    margin: 5% ;
 }
 
 main video{
-    align-items: center
+    width: 100%;
 }
 
-.timerMargem{
-    color:#514988;
-    font-size: 2rem;
+.timerMargem {
+    color: var(--purple);
+    font-size: 1.7em;
     font-weight: bold;
-    margin-left: 3%;
+    margin: 3% 0 0 3%;
 }
 
 #txtVideo{
     color: #E33881;
-    font-family: 4.375rem;
+    font-family: 4em;
     margin: 2%;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 main div{
@@ -113,7 +109,7 @@ button {
     border: 0;
     font-size: 2.625;
     color: #fff;
-    background-color: #514988;
+    background-color: var(--purple);
     font-weight: bold;
 }
 
