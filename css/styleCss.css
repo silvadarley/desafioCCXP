@@ -118,3 +118,13 @@ button:hover {
     cursor: pointer;
     color: var(--amarelo);
 }
+
+.cardHighlight{
+    box-shadow: 10px 10px 10px 5px #808080;
+    padding: 2.3%;
+    transition: 0.5s;
+}
+
+#cards{
+    margin: 30px;
+}
