@@ -128,3 +128,7 @@ button:hover {
 #cards{
     margin: 30px;
 }
+
+.cardSelected{
+    border: 5px solid #03b30cd0;
+}

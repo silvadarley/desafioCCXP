@@ -1,5 +1,8 @@
+//Constante em formato de Array Vazio
+const ingressos = [];
+
 function addReadBorder(id) {
-    element = document.querySelector("#" + id);
+    element = document.querySelector(`#${id}`);
     element.style.border = "5px solid red";
 }
 
@@ -21,11 +24,17 @@ function highlightCard(selector) {
     Esta função retorna qual tecla do teclado foi precionada com o seu respectivo código
  */
 function checkKeyBoardCode() {
-    document.addEventListener('keydown', (event) => {
-        var name = event.key;
-        var code = event.code;
-        alert(`Tecla Pressionada ${name} \r\nKey code: ${code}`);
-    }, false)
+    document.addEventListener(
+            'keydown', 
+            /*Arrow function com o sinal => estou substituindo ae deixando de incluir a palvra 
+             function, mesmo assim esta sendo criada e comportando como uma function */
+            (event) => {
+                var name = event.key;
+                var code = event.code;
+                alert(`Tecla Pressionada ${name} \r\nKey code: ${code}`);
+        }, 
+        false
+    );
 }
 
 //checkKeyBoardCode()
@@ -69,3 +78,35 @@ function addKeyBoardEventListners(){
     }, false);
 }
 addKeyBoardEventListners();
+
+/* */
+function selectCard(selector){
+    var element = document.querySelector(selector);
+    /*No evento do click, é verificado se já existe o evento **cardSelected** com a propriedeade toggle.
+        1 - Se não existe ele inclui.
+        2 - Se existe ele remove.
+    */
+    element.classList.toggle("cardSelected");
+
+    //Aqui neste if uso a propriedade includes que verifica sejá existe o ingresso selecionado
+    if(ingressos.includes(selector)){
+        //Removendo o ultimo *ingresso* elemento do Array
+        ingressos.pop(selector);
+    }else{
+        //Adicionando um ingresso no final do array
+        ingressos.push(selector);
+    }
+}
+
+/*Aqio eu substitui esta expressão
+    function showSelectedCards(){
+Por esta
+    showSelectedCards = () =>{
+Que no final é a mesma coisa, apenas estou utilizando o Arrow Function
+*/
+showSelectedCards = () =>{
+    if(ingressos.length > 0){
+        alert(`Você selecionou os ingressos: ${ingressos} `);
+        return;
+    }
+}

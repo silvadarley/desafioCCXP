@@ -75,25 +75,48 @@
             <div id="cards">
 
                 <div id="quinta" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" classe="cardSize">
-                    <img src="./imagem/quinta.svg" alt="">
+                    <img 
+                        onclick="selectCard('#quinta')"
+                        class="cards-ingressos" 
+                        src="./imagem/quinta.svg" 
+                        alt="">
                 </div>
 
                 <div id="sexta" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" classe="cardSize">
-                    <img src="./imagem/sexta.svg" alt="">
+                    
+                    <img 
+                        onclick="selectCard('#sexta')"
+                        class="cards-ingressos" 
+                        src="./imagem/sexta.svg" 
+                        alt="">
                 </div>
 
                 <div id="sabado" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" classe="cardSize">
-                    <img src="./imagem/esgotado.svg" alt="">
+                    
+                    <img 
+                        onclick="selectCard('#sabado')"
+                        class="cards-ingressos" 
+                        src="./imagem/esgotado.svg" 
+                        alt="">
                 </div>
 
-                <div id="domingo" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" classe="cardSize">
-                    <img src="./imagem/domingo.svg" alt="">
+                <div 
+                    id="domingo" 
+                        onmouseover="highlightCard('#domingo')" 
+                        onmouseout="highlightCard('#domingo')" 
+                        classe="cardSize">
+                    
+                    <img
+                        onclick="selectCard('#domingo')" 
+                        class="cards-ingressos" 
+                        src="./imagem/domingo.svg" 
+                        alt="">
                 </div>
             </div>
         </div>
         <!--Botão-->
         <div id="botao">
-            <button> GARANTA O SEU!</button>
+            <button onclick="showSelectedCards()"> GARANTA O SEU!</button>
         </div>
     </footer>
 
